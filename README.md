@@ -1,16 +1,39 @@
-# React + Vite
+# Poké Wordle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun, interactive "Who's That Pokémon?" guessing game built with React and Vite. Guess the Pokémon from its silhouette within 3 tries!
 
-Currently, two official plugins are available:
+## Features
+- **Classic Silhouette Guessing:** The game shows you a solid black silhouette of a random Pokémon.
+- **Wordle-style Hints:** Characters light up green (correct position) or yellow (correct letter, wrong position) based on your guess.
+- **Progressive Hint System:** Unlocks the Pokémon's Type and Generation/Region as you make incorrect guesses.
+- **Streak Tracking:** Keep track of your consecutive correct guesses in a session.
+- **Responsive UI:** Dynamic animations, custom Pokéball aesthetics, and mobile-friendly design.
+- **No Backend Required:** Completely powered by the [PokéAPI](https://pokeapi.co/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- **React** (State management, Components, Hooks)
+- **Vite** (Build tool)
+- **Vanilla CSS** (Custom animations like shaking, flipping, and spinning)
+- **PokéAPI** (Data source for Pokémon sprites, names, types, and generations)
 
-## React Compiler
+## Running Locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+To run this project on your local machine:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Injora/Poke-Wordle.git
+   ```
+2. Navigate into the directory:
+   ```bash
+   cd Poke-Wordle
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and enjoy the guessing game!
