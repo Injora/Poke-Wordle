@@ -1,0 +1,41 @@
+.wrap { display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 20px 16px; max-width: 600px; margin: 0 auto; gap: 14px; }
+.topBar { text-align: center; position: relative; width: 100%; }
+.streakBadge { position: fixed; top: 20px; right: 20px; background: var(--bg-card); padding: 8px 16px; border-radius: 16px; border: 2px solid var(--border); font-size: 1.2rem; font-weight: 800; color: var(--accent-yellow); box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 100; }
+.titleRow { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.ball { width: 36px; height: 36px; filter: drop-shadow(0 0 8px rgba(204, 0, 0, 0.5)); }
+.title { font-size: clamp(1.5rem,5vw,2.2rem); font-weight: 800; background: linear-gradient(135deg,#ffffff 0%,#ffde00 50%,#cc0000 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px; }
+.subTxt { color: var(--text-secondary); font-size: 0.78rem; font-weight: 500; margin-top: 4px; letter-spacing: 0.8px; text-transform: uppercase; }
+.shaky { animation: shake 0.5s ease-in-out; }
+.picBox { position: relative; width: 220px; height: 220px; border-radius: 20px; overflow: hidden; border: 2px solid rgba(52,152,219,0.25); box-shadow: 0 0 32px rgba(52,152,219,0.12); background: var(--bg-card); display: flex; align-items: center; justify-content: center; }
+.loadingBox { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--text-secondary); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.5px; z-index: 2; }
+.spinny { display: inline-block; width: 24px; height: 24px; border-radius: 50%; border: 3px solid var(--border); border-top: 3px solid var(--accent-blue); animation: spin 0.9s linear infinite; }
+.qMark { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 2px 8px; font-size: 0.68rem; font-weight: 700; color: var(--text-muted); letter-spacing: 2px; }
+.hintArea { display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 420px; }
+.hintCard { display: flex; align-items: center; gap: 12px; padding: 10px 16px; border-radius: 12px; border: 1px solid; animation: flipIn 0.4s ease forwards; }
+.endCard { display: flex; align-items: center; gap: 16px; padding: 14px 18px; border-radius: 14px; background: var(--bg-card); border: 1px solid var(--border); animation: flipIn 0.5s ease forwards; }
+.endImg { width: 72px; height: 72px; image-rendering: pixelated; }
+.endName { font-size: 1.1rem; font-weight: 800; color: var(--text-primary); letter-spacing: 1px; }
+.endTypes { display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap; }
+.typePill { padding: 2px 10px; border-radius: 8px; font-size: 0.7rem; font-weight: 600; color: #fff; text-transform: capitalize; }
+.dots { display: flex; gap: 8px; }
+.dot { width: 28px; height: 6px; border-radius: 3px; transition: background 0.3s; }
+.ansBoxes { display: flex; gap: 5px; flex-wrap: wrap; justify-content: center; }
+.oneBox { width: 32px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: var(--bg-card); border: 2px solid var(--border); transition: all 0.3s ease; }
+.spaceBox { width: 16px; background: transparent; border: none; }
+.litBox { border-color: var(--accent-blue); background: rgba(52,152,219,0.15); box-shadow: 0 0 8px rgba(52,152,219,0.2); }
+.boxLetter { font-size: 1rem; font-weight: 700; color: var(--text-primary); transition: opacity 0.3s; }
+.msgTxt { font-size: 0.9rem; font-weight: 600; text-align: center; padding: 6px 16px; border-radius: 10px; background: rgba(255,255,255,0.04); }
+.guessList { display: flex; flex-direction: column; gap: 6px; width: 100%; max-width: 420px; align-items: center; }
+.guessRow { display: flex; gap: 4px; justify-content: center; flex-wrap: wrap; }
+.guessBox { width: 32px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 0.85rem; font-weight: 700; font-family: 'Outfit',sans-serif; color: #fff; transition: all 0.15s ease; }
+.cursor { width: 2px; height: 24px; background: var(--accent-blue); border-radius: 1px; align-self: center; animation: blink 1s infinite; }
+.keyArea { display: flex; flex-direction: column; gap: 6px; width: 100%; max-width: 500px; }
+.keyRow { display: flex; justify-content: center; gap: 4px; }
+.oneKey { min-width: 30px; height: 44px; border-radius: 8px; border: none; font-size: 0.85rem; font-weight: 600; font-family: 'Outfit',sans-serif; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s ease; outline: none; padding: 0 8px; }
+.bigKey { min-width: 44px; font-size: 0.9rem; }
+.playBtn { margin-top: 4px; padding: 13px 36px; border-radius: 14px; border: none; background: linear-gradient(135deg,var(--accent-red),#a00000); color: #fff; font-size: 1rem; font-weight: 700; font-family: 'Outfit',sans-serif; cursor: pointer; letter-spacing: 0.5px; box-shadow: 0 4px 20px rgba(204, 0, 0, 0.35); transition: all 0.2s ease; }
+.loadWrap { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 60vh; gap: 20px; }
+.spinBall { width: 48px; height: 48px; border-radius: 50%; border: 4px solid #fff; border-top: 4px solid var(--accent-red); animation: spin 1s linear infinite; }
+.loadTxt { color: var(--text-secondary); font-size: 1rem; font-weight: 500; }
+.foot { margin-top: auto; padding-top: 16px; padding-bottom: 10px; color: var(--text-muted); font-size: 0.72rem; letter-spacing: 0.5px; }
+.igBtn { position: fixed; bottom: 20px; right: 20px; background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); border-radius: 50%; padding: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 15px rgba(225, 48, 108, 0.4); animation: heartbeat 1.5s infinite; z-index: 100; color: #fff; }

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/pokeball.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poké Wordle</title>
+  <meta name="description"
+    content="A Wordle-style Pokémon guessing game. Identify the silhouette and guess the name letter by letter!" />
+  <style>
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes shake {
+
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      20% {
+        transform: translateX(-8px);
+      }
+
+      40% {
+        transform: translateX(8px);
+      }
+
+      60% {
+        transform: translateX(-6px);
+      }
+
+      80% {
+        transform: translateX(6px);
+      }
+    }
+
+    @keyframes flipIn {
+      0% {
+        transform: rotateX(90deg);
+        opacity: 0;
+      }
+
+      100% {
+        transform: rotateX(0);
+        opacity: 1;
+      }
+    }
+
+    .guess-cell-flip {
+      animation: flipIn 0.3s ease forwards;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
